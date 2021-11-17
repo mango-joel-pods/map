@@ -502,12 +502,139 @@ const stewart = new google.maps.Marker({
     icon: "basketball.png",
   });
    const rudyinfowindow = new google.maps.InfoWindow({
-    content: "The Gym: Holds two basketball courts, locker rooms for football, soccer, cross counrty and volleyball.",
+    content: "Marisa Field House: Holds two basketball courts, locker rooms for football, soccer, cross counrty and volleyball.",
   });
  
   rudy.addListener("click", () => {
     rudyinfowindow.open({
       anchor: rudy,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+
+  const hanna = new google.maps.Marker({
+    position: { lat: 39.89945973572254, lng:  -80.1870524289517  },       
+    map,
+    title: "Hanna Hall",
+    icon: "curling-2.png",
+  });
+   const hannainfowindow = new google.maps.InfoWindow({
+    content: "Hanna Hall: Math and business classes are taken here. Equipped with mac labs.",
+  });
+ 
+  hanna.addListener("click", () => {
+    hannainfowindow.open({
+      anchor: hanna,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+    const miller = new google.maps.Marker({
+    position: { lat: 39.899493395957904, lng:  -80.18750714167378  },      
+    map,
+    title: "Miller Hall",
+    icon: "yoga.png",
+  });
+   const millerinfowindow = new google.maps.InfoWindow({
+    content: "Miller Hall: Education building. Contains the Registar office, Admissions office, Alumni Hall. Built in 1899, most of the original structures still stand tall and beautiful to this day.",
+  });
+ 
+  miller.addListener("click", () => {
+    millerinfowindow.open({
+      anchor: miller,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+      const willison = new google.maps.Marker({
+    position: { lat: 39.897342167656156, lng:  -80.1863065405262  },       
+    map,
+    title: "Willison Hall",
+    icon: "skilifting.png",
+  });
+   const willisoninfowindow = new google.maps.InfoWindow({
+    content: "Willison Hall: The only upperclassmen d orm for men. Private bathrooms and AC. Used to be a hotel, Waynesburg purchased it in 2008.",
+  });
+ 
+  willison.addListener("click", () => {
+    willisoninfowindow.open({
+      anchor: willison,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+       const gpac = new google.maps.Marker({
+    position: { lat: 39.89992791751792,  lng:  -80.18785017063112   },      
+    map,
+    title: "GPAC",
+    icon: "finish2.png",
+  });
+   const gpacinfowindow = new google.maps.InfoWindow({
+    content: "Godwin Performing Arts Center: Equipped with an auditorium where plays, talent shows, and Waynesburg game shows are hosted.",
+  });
+ 
+  gpac.addListener("click", () => {
+    gpacinfowindow.open({
+      anchor: gpac,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+       const caf = new google.maps.Marker({
+    position: { lat: 39.90058275466909,  lng:  -80.18783022711568   },       
+    map,
+    title: "caf",
+    icon: "hotfoodcheckpoint.png",
+  });
+   const cafinfowindow = new google.maps.InfoWindow({
+    content: "Benedum Dining Hall: Upstairs with the best food on this side of campus. Downstairs hold classrooms for art courses.",
+  });
+ 
+  caf.addListener("click", () => {
+    cafinfowindow.open({
+      anchor: caf,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+        const rc = new google.maps.Marker({
+    position: { lat: 39.900717393304845,  lng:  -80.18718804511344   },        
+    map,
+    title: "rc",
+    icon: "2915103_1.png",
+  });
+   const rcinfowindow = new google.maps.InfoWindow({
+    content: "Roberts Chapel: Place of Worship. Down stairs has classrooms equipped for music classes, choir, and band.",
+  });
+ 
+  rc.addListener("click", () => {
+    rcinfowindow.open({
+      anchor: rc,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+          const wiley = new google.maps.Marker({
+    position: { lat: 39.89317081994316,  lng:  -80.18152444087173    },        
+    map,
+    title: "wiley",
+    icon: "usfootball.png",
+  });
+   const wileyinfowindow = new google.maps.InfoWindow({
+    content: "John F. Wiley Stadium: Football field that also hosts Waynesburg soccer matches and lacrosse.",
+  });
+ 
+  wiley.addListener("click", () => {
+    wileyinfowindow.open({
+      anchor: wiley,
       map,
       shouldFocus: false,
     });
